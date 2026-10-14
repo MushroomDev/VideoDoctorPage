@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>隐私说明 — VideoDoctor</title>
+  <meta name="description" content="VideoDoctor 隐私说明：媒体本地处理、不上传云端、购买与诊断数据说明。" />
+  <meta name="theme-color" content="#070b0e" />
+  <link rel="icon" href="assets/img/app-icon.png" type="image/png" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://mushroomdev.github.io/VideoDoctorPage/privacy.html" />
+  <link rel="alternate" hreflang="en" href="https://mushroomdev.github.io/VideoDoctorPage/en/privacy.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="assets/img/app-icon.png" alt="VideoDoctor" width="34" height="34" />
+        <span>VideoDoctor</span>
+      </a>
+      <nav class="nav-links">
+        <a href="support.html">技术支持</a>
+        <div class="lang-switch">
+          <a class="active" href="privacy.html">中文</a>
+          <a href="en/privacy.html">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Privacy</div>
+        <h1>隐私说明</h1>
+        <p>最后更新：2026-10-14。本文说明 VideoDoctor 如何处理你的媒体与购买信息。</p>
+      </div>
+    </section>
+
+    <section style="padding-top:0">
+      <div class="wrap prose">
+        <h2>1. 媒体处理</h2>
+        <p>VideoDoctor 在你的 Mac 本地完成探测、诊断与修复。修复过程<strong>不要求</strong>将视频上传到我们的服务器。源文件以只读方式访问，输出写入你选择的目录。</p>
+
+        <h2>2. 我们不收集的内容</h2>
+        <ul>
+          <li>不会为了修复而收集你的视频内容本身</li>
+          <li>不会要求账号登录才能使用本地修复能力</li>
+        </ul>
+
+        <h2>3. 购买与权益</h2>
+        <p>若你购买 Pro，交易与收据校验通过 Apple 的 App Store / StoreKit 完成。我们据此解锁本机权益，不另建独立账号体系。</p>
+
+        <h2>4. 本地存储</h2>
+        <p>应用可能在本机保存任务队列、诊断摘要、输出路径偏好与权益状态，以便你重新打开应用后继续使用。这些数据留在你的设备上。</p>
+
+        <h2>5. 支持沟通</h2>
+        <p>当你通过邮件或 GitHub Issues 联系我们时，你会主动提供的信息（如系统版本、问题描述）仅用于排查与回复。</p>
+
+        <h2>6. 联系</h2>
+        <p>隐私相关问题：<a href="mailto:swain6@163.com?subject=VideoDoctor%20Privacy">swain6@163.com</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>© <span id="y"></span> VideoDoctor</div>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="support.html">技术支持</a>
+        <a href="en/privacy.html">English</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>技术支持 — VideoDoctor</title>
+  <meta name="description" content="VideoDoctor 官方技术支持：常见问题、权限、输出目录、修复失败排查与联系方式。" />
+  <meta name="theme-color" content="#070b0e" />
+  <link rel="icon" href="assets/img/app-icon.png" type="image/png" />
+  <link rel="alternate" hreflang="zh-Hans" href="https://mushroomdev.github.io/VideoDoctorPage/support.html" />
+  <link rel="alternate" hreflang="en" href="https://mushroomdev.github.io/VideoDoctorPage/en/support.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Syne:wght@600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="assets/img/app-icon.png" alt="VideoDoctor" width="34" height="34" />
+        <span>VideoDoctor</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="index.html#features">功能</a>
+        <a href="support.html">技术支持</a>
+        <div class="lang-switch">
+          <a class="active" href="support.html" hreflang="zh-Hans">中文</a>
+          <a href="en/support.html" hreflang="en">EN</a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero">
+      <div class="wrap">
+        <div class="eyebrow">Support</div>
+        <h1>技术支持</h1>
+        <p>这里汇总安装使用、权限、输出目录、常见失败原因，以及联系我们的方式。VideoDoctor 为尽力修复（best-effort），重度损坏不一定能 100% 恢复。</p>
+      </div>
+    </section>
+
+    <section style="padding-top:8px">
+      <div class="wrap">
+        <div class="support-cards">
+          <article class="support-card">
+            <h3>快速开始</h3>
+            <p>把视频拖进队列，查看诊断后点「开始修复」，结果写入输出目录。</p>
+            <a class="btn btn-secondary" href="index.html#howto">查看使用步骤</a>
+          </article>
+          <article class="support-card">
+            <h3>GitHub Issues</h3>
+            <p>可复现的问题请附系统版本、样例现象与（如可分享）脱敏样例说明。</p>
+            <a class="btn btn-secondary" href="https://github.com/MushroomDev/VideoDoctorPage/issues" rel="noopener">提交 Issue</a>
+          </article>
+          <article class="support-card">
+            <h3>邮件支持</h3>
+            <p>商务与账号相关问题可通过邮件联系（请在主题注明 VideoDoctor）。</p>
+            <a class="btn btn-secondary" href="mailto:swain6@163.com?subject=VideoDoctor%20Support">发送邮件</a>
+          </article>
+        </div>
+
+        <div class="section-head">
+          <h2>常见问题</h2>
+          <p>先看这里，多数使用与权限问题可以自行解决。</p>
+        </div>
+
+        <div class="faq">
+          <details class="faq-item">
+            <summary>修复会不会改写我的原视频？</summary>
+            <p>不会。源文件以只读方式访问，修复结果写入你指定的输出目录。请在设置中确认输出文件夹。</p>
+          </details>
+          <details class="faq-item">
+            <summary>提示无法访问文件 / 权限被拒绝怎么办？</summary>
+            <p>macOS 沙盒下需要你主动选择过源文件或输出目录。请重新通过「添加视频」选择文件，或在设置中重新选择输出目录，再试一次。</p>
+          </details>
+          <details class="faq-item">
+            <summary>诊断结果里有问题，但修复失败了？</summary>
+            <p>损坏程度不同，结果也不同。缺 moov、极端截断、几乎无可用媒体数据时可能失败。界面会尽量给出原因；可尝试提供同机同设置的完好参考视频（若流程提示需要）。</p>
+          </details>
+          <details class="faq-item">
+            <summary>Free 版限制是什么？如何升级 Pro？</summary>
+            <p>Free：每日约 3 次成功修复，单文件时长约 3 分钟上限；诊断仍可用。需要无限次数/时长与批量「全部修复」时，在应用内购买 Pro（一次买断），可用「恢复购买」。</p>
+          </details>
+          <details class="faq-item">
+            <summary>支持哪些格式？</summary>
+            <p>常见 MP4 / MOV 及多种常见封装优先。实验性扩展名会提示成功率可能不稳定。输出目标一般为更通用的 H.264 / AAC MP4。</p>
+          </details>
+          <details class="faq-item">
+            <summary>封面缩略图不显示？</summary>
+            <p>严重损坏的文件可能解不出第一帧，会显示占位图。能正常解码的文件通常会显示封面。</p>
+          </details>
+          <details class="faq-item">
+            <summary>系统要求</summary>
+            <p>macOS 12 及以上（以 App Store 页面为准）。建议在有足够磁盘空间的本机输出目录中运行批量任务。</p>
+          </details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>© <span id="y"></span> VideoDoctor</div>
+      <div class="footer-links">
+        <a href="index.html">首页</a>
+        <a href="privacy.html">隐私说明</a>
+        <a href="en/support.html">English</a>
+      </div>
+    </div>
+  </footer>
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+</body>
+</html>
